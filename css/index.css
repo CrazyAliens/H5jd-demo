@@ -1,0 +1,66 @@
+html{font-size: 100px}
+body{
+    position: relative;
+    min-width: 320px;/*不能用rem，因为这是body的宽度，如果用rem那就一直都是1，没有办法缩小*/
+    max-width: 640px;
+    font-size: 16px;
+    margin: auto;
+}
+.header{position: fixed;width: 6.4rem; z-index: 999;}
+.content{position: relative; width: 6rem; margin: auto; }
+.header .content .left input{
+    width: 5rem;
+    height:.3rem;
+    outline: none;
+    border-radius:.15rem;
+    margin: .05rem 0;
+    padding-left: .6rem;
+    box-sizing: border-box;
+    background:url("../img/header/jd.png") no-repeat .1rem center/auto 60%,
+               #fff url("../img/header/search.png") no-repeat .4rem center/auto 60%;
+}
+.header .content .right{ position: absolute;top:.05rem;right:0;font:.16rem/.3rem"";color: white;}
+.header .content{display: flex;flex-wrap: nowrap}
+
+
+#swiper1{margin-bottom: 0.3rem;}
+#swiper1 img{width: 6.4rem;height: 3.22rem;}
+
+
+#swiper2>.swiper-wrapper>.swiper-slide>ul{display: flex;flex-wrap: wrap;padding-bottom: .2rem}
+#swiper2>.swiper-wrapper>.swiper-slide>ul>li{width: 20%;margin-bottom: 0.3rem;text-align: center;}
+#swiper2>.swiper-wrapper>.swiper-slide>ul>li>img{width: .58rem;height: .58rem;}
+
+#swiper3 img{width: 6.4rem;height: 1.65rem;}
+.part1 img{width: 6.4rem;height: 1.64rem}
+
+.part2 header{display:flex;width: 6.4rem;padding:.05rem 0;justify-content: center;background: url("../img/part2/shoppinr_bg.png")no-repeat center;}
+.part2 .shop>ul{display: flex;height:3rem;flex-wrap:wrap;justify-content:space-around;align-content:space-around;}
+.part2 .shop>ul>li{ position: relative; width: 3rem; height: 1.3rem; border:.01rem solid #eee;padding: .05rem;}
+.part2 .shop>ul>li img{ position:absolute; right: .05rem; bottom: .05rem; width: 1rem; }
+.part2 .shop>section.list>ul{display: flex;flex-wrap: nowrap;justify-content: space-around;margin-bottom: .05rem;}
+.part2 .shop>section.list>ul>li{ border:.01rem solid #eee;padding:.05rem;}
+.part2 .shop>section.list>ul>li img{width: 1.4rem;height: 1.2rem;}
+
+.part3 header{display:flex;width: 6.4rem;margin-top:0.05rem;padding:.05rem 0;justify-content: center;background: url("../img/part2/shoppinr_bg.png")no-repeat center;}
+.part3>ul{display: flex;flex-wrap: wrap;justify-content: space-around;}
+.part3>ul>li{position: relative; width: 3rem;padding:.05rem;margin-top: .05rem;}
+.part3>ul>li .bottom span{font: bold 0.16rem/0.4rem ""; color: red;}
+.part3>ul>li .bottom p{font-size: 0.14rem;color: #999;}
+.part3>ul>li .bottom section a{  position:absolute; right:.02rem; bottom:.02rem; padding:.01rem .24rem; border:.01rem solid #999; font-size:0.14rem; color:#999;}
+.part3>ul img{width: 2.76rem;height: 2.76rem; }
+
+.part4{margin-top:.08rem; font:0.16rem/0.46rem ""; text-align: center; border:.01rem #999; border-style:solid none;}
+
+footer.footer{margin-bottom: .6rem; font-size:.16rem;}
+footer.footer ul li{ border-bottom: 0.01rem solid #999;text-align: center; line-height: 0.5rem; }
+footer.footer ul li:last-child{border-bottom: none;}
+footer.footer ul li>a{ padding: 0 0.2rem; border-left: 0.01rem solid #999; }
+footer.footer>ul>li>dl{display: flex;flex-wrap: nowrap;justify-content: center;}
+footer.footer>ul>li>dl>dt{margin: .1rem;}
+footer.footer>ul>li>dl>dt>a{display:block;width:45px;height:50px;padding-top:34px;font:12px/12px"";color: #999;box-sizing:border-box;}
+footer.footer>ul>li>dl>dt:nth-child(1)>a{  background: url("../img/footer/jd-sprites.png")no-repeat -113px -70px/200px 200px;}
+footer.footer>ul>li>dl>dt:nth-child(2)>a{ background: url("../img/footer/jd-sprites.png")no-repeat -35px -70px/200px 200px;}
+footer.footer>ul>li>dl>dt:nth-child(3)>a{  background: url("../img/footer/jd-sprites.png")no-repeat -73px -70px/200px 200px;}
+nav.nav{display: flex;position: fixed;bottom:0;left:0; right:0;margin: auto; flex-wrap: nowrap;justify-content: space-around;background-color: #ffffff;}
+nav.nav img{ width: 0.7rem;}
